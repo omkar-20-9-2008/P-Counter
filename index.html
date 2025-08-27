@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prayer Counter</title>
+</head>
+<body>
+    <p style="font-size: 50px;">Prayer Counter P1</p>
+    <P id="op"style="font-size: 50px; font-weight:bold;"></P>
+    <button id="a" onclick="add()" style="width: 200px; height: 100px;">Click</button><br><br>
+    <button id="rs" onclick="reset()">Reset</button>
+    <audio id="myAudio" src="bell-cut.mp3"></audio>
+
+    <script type="text/javascript">
+        var x = 0;
+        document.getElementById('op').innerHTML=x;
+
+        let audio= new audio
+        function add(){
+            x=x+1;
+            document.getElementById('op').innerHTML=x;
+            console.log(x);
+            if(x==108){
+                playAudio();
+            }
+        }
+
+        function reset(){
+            x=0;
+            document.getElementById('op').innerHTML=x;
+            console.log(x);
+        }
+
+        function playAudio(){
+            let audio = document.getElementById('myAudio');
+            audio.play();
+        }
+
+    </script>
+</body>
+</html>
