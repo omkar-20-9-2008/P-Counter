@@ -4,8 +4,8 @@
     <title>Prayer Counter</title>
 </head>
 <body>
-    <p style="font-size: 50px;">Prayer Counter P1</p>
-    <P id="op"style="font-size: 50px; font-weight:bold;"></P>
+    <p style="font-size: 100px;">Prayer Counter P1</p>
+    <P id="op"style="font-size: 100px; font-weight:bold;"></P>
     <button id="a" onclick="add()" style="width: 200px; height: 100px;">Click</button><br><br>
     <button id="rs" onclick="reset()">Reset</button>
     <audio id="myAudio" src="bell-cut.mp3"></audio>
@@ -19,7 +19,7 @@
             x=x+1;
             document.getElementById('op').innerHTML=x;
             console.log(x);
-            if(x==108){
+            if(x==10){
                 playAudio();
             }
         }
@@ -37,4 +37,5 @@
 
     </script>
 </body>
+
 </html>
